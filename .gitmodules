@@ -1,0 +1,3 @@
+[submodule "reader/em4095"]
+	path = reader/em4095
+	url = https://github.com/libdriver/em4095.git
