@@ -8,7 +8,7 @@
 
 [![MISRA](https://img.shields.io/badge/misra-compliant-brightgreen.svg)](/misra/README.md) [![API](https://img.shields.io/badge/api-reference-blue.svg)](https://www.libdriver.com/docs/em4100/index.html) [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](/LICENSE)
 
-EM4100（先前命名為H4100）是一種CMOS集成電路，用於電子只讀RF轉發器。 該電路由放置在電磁場中的外部線圈供電，並通過其中一個線圈端子從同一場獲得主時鐘。 通過打開和關閉調製電流，晶片將發送回包含在因數y預程式設計記憶體陣列中的64比特資訊。 晶片的程式設計是通過多晶矽連結的雷射熔斷來執行的，以便在每個晶片上存儲唯一的程式碼。 EM4100有幾個金屬選項，用於定義程式碼類型和資料速率。 每個數據比特具有64、32和16個載波頻率週期的資料速率。 數據可以編碼為Manchester、Biphase或PSK。 由於邏輯覈心的低功耗，不需要電源緩衝電容器。 只需要一個外部線圈就可以獲得晶片功能。 還集成了74pF的並聯諧振電容器。
+EM4100（先前命名為H4100）是一種CMOS集成電路，用於電子只讀RF轉發器。 該電路由放置在電磁場中的外部線圈供電，並通過其中一個線圈端子從同一場獲得主時鐘。 通過打開和關閉調製電流，晶片將發送回包含在因數y預程式設計記憶體陣列中的64比特資訊。 晶片的程式設計是通過多晶矽連結的雷射熔斷來執行的，以便在每個晶片上存儲唯一的程式碼。 EM4100有多種不同的金屬刻印，用於定義程式碼類型和資料速率。 每個數據比特具有64、32和16個載波頻率週期的資料速率。 數據可以編碼為Manchester、Biphase或PSK。 由於邏輯覈心的低功耗，不需要電源緩衝電容器。 只需要一個外部線圈就可以獲得晶片功能。 晶片還集成了74pF的並聯諧振電容器。
 
 LibDriver EM4100是LibDriver推出的EM4100全功能驅動，該驅動提供ID讀取等功能並且它符合MISRA標準。
 
