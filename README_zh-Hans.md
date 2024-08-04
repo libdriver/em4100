@@ -8,7 +8,7 @@
 
 [![MISRA](https://img.shields.io/badge/misra-compliant-brightgreen.svg)](/misra/README.md) [![API](https://img.shields.io/badge/api-reference-blue.svg)](https://www.libdriver.com/docs/em4100/index.html) [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](/LICENSE)
 
-EM4100（先前命名为H4100）是一种CMOS集成电路，用于电子只读RF转发器。该电路由放置在电磁场中的外部线圈供电，并通过其中一个线圈端子从同一场获得主时钟。通过打开和关闭调制电流，芯片将发送回包含在因子y预编程存储器阵列中的64位信息。芯片的编程是通过多晶硅链路的激光熔断来执行的，以便在每个芯片上存储唯一的代码。EM4100有几个金属选项，用于定义代码类型和数据速率。每个数据比特具有64、32和16个载波频率周期的数据速率。数据可以编码为Manchester、Biphase或PSK。由于逻辑核心的低功耗，不需要电源缓冲电容器。只需要一个外部线圈就可以获得芯片功能。还集成了74pF的并联谐振电容器。
+EM4100（先前命名为H4100）是一种CMOS集成电路，用于电子只读RF转发器。该电路由放置在电磁场中的外部线圈供电，并通过其中一个线圈端子从同一场获得主时钟。通过打开和关闭调制电流，芯片将发送回包含在因子y预编程存储器阵列中的64位信息。芯片的编程是通过多晶硅链路的激光熔断来执行的，以便在每个芯片上存储唯一的代码。EM4100有多种不同的金属刻印，用于定义代码类型和数据速率。每个数据比特具有64、32和16个载波频率周期的数据速率。数据可以编码为Manchester、Biphase或PSK。由于逻辑核心的低功耗，不需要电源缓冲电容器。只需要一个外部线圈就可以获得芯片功能。芯片还集成了74pF的并联谐振电容器。
 
 LibDriver EM4100是LibDriver推出的EM4100全功能驱动，该驱动提供ID读取等功能并且它符合MISRA标准。
 
