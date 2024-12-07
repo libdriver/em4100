@@ -70,9 +70,9 @@ uint8_t em4100_interface_contactless_deinit(void);
 
 /**
  * @brief      interface contactless read
- * @param[in]  clock_div is the set clock div
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the read length
+ * @param[in]  clock_div clock div
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len read length
  * @return     status code
  *             - 0 success
  *             - 1 contactless read failed
@@ -82,14 +82,14 @@ uint8_t em4100_interface_contactless_read(uint32_t clock_div, uint8_t *buf, uint
 
 /**
  * @brief     interface delay ms
- * @param[in] ms
+ * @param[in] ms time
  * @note      none
  */
 void em4100_interface_delay_ms(uint32_t ms);
 
 /**
  * @brief     interface print format data
- * @param[in] fmt is the format data
+ * @param[in] fmt format data
  * @note      none
  */
 void em4100_interface_debug_print(const char *const fmt, ...);

@@ -50,11 +50,11 @@
 
 /**
  * @brief         manchester decode
- * @param[in]     *handle points to an em4095 handle structure
- * @param[in]     *input points to an input buffer
- * @param[in]     input_len is the input length
- * @param[out]    *output points to an output buffer
- * @param[in,out] *output_len points to an output length buffer
+ * @param[in]     *handle pointer to an em4095 handle structure
+ * @param[in]     *input pointer to an input buffer
+ * @param[in]     input_len input length
+ * @param[out]    *output pointer to an output buffer
+ * @param[in,out] *output_len pointer to an output length buffer
  * @return        status code
  *                - 0 success
  *                - 1 can't find header
@@ -110,11 +110,11 @@ static uint8_t a_em4100_manchester_decode(uint8_t *input, uint16_t input_len, ui
 
 /**
  * @brief         raw decode
- * @param[in]     *handle points to an em4095 handle structure
- * @param[in]     *input points to an input buffer
- * @param[in]     input_len is the input length
- * @param[out]    *output points to an output buffer
- * @param[in,out] *output_len points to an output length buffer
+ * @param[in]     *handle pointer to an em4095 handle structure
+ * @param[in]     *input pointer to an input buffer
+ * @param[in]     input_len input length
+ * @param[out]    *output pointer to an output buffer
+ * @param[in,out] *output_len pointer to an output length buffer
  * @return        status code
  *                - 0 success
  *                - 1 can't find header
@@ -159,9 +159,9 @@ static uint8_t a_em4100_raw_decode(uint8_t *input, uint16_t input_len, uint8_t *
 
 /**
  * @brief      frame decode
- * @param[in]  *handle points to an em4095 handle structure
- * @param[in]  *input points to an input buffer
- * @param[out] *output points to an output buffer
+ * @param[in]  *handle pointer to an em4095 handle structure
+ * @param[in]  *input pointer to an input buffer
+ * @param[out] *output pointer to an output buffer
  * @return     status code
  *             - 0 success
  *             - 1 header is invalid
@@ -233,9 +233,9 @@ static uint8_t a_em4100_frame_decode(uint8_t input[64], uint8_t output[5])
 
 /**
  * @brief      read data
- * @param[in]  *handle points to an em4100 handle structure
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the read length
+ * @param[in]  *handle pointer to an em4100 handle structure
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len read length
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -253,7 +253,7 @@ static uint8_t a_em4100_read(em4100_handle_t *handle, uint8_t *buf, uint16_t len
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to an em4100 handle structure
+ * @param[in] *handle pointer to an em4100 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 contactless initialization failed
@@ -312,7 +312,7 @@ uint8_t em4100_init(em4100_handle_t *handle)
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to an em4100 handle structure
+ * @param[in] *handle pointer to an em4100 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 deinit failed
@@ -347,8 +347,8 @@ uint8_t em4100_deinit(em4100_handle_t *handle)
 
 /**
  * @brief      read data
- * @param[in]  *handle points to an em4100 handle structure
- * @param[out] *id points to an id buffer
+ * @param[in]  *handle pointer to an em4100 handle structure
+ * @param[out] *id pointer to an id buffer
  * @return     status code
  *             - 0 success
  *             - 1 manchester decode failed
@@ -406,8 +406,8 @@ uint8_t em4100_read(em4100_handle_t *handle, uint8_t id[5])
 
 /**
  * @brief     print id
- * @param[in] *handle points to an em4100 handle structure
- * @param[in] *buf points to an id buffer
+ * @param[in] *handle pointer to an em4100 handle structure
+ * @param[in] *buf pointer to an id buffer
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -440,7 +440,7 @@ uint8_t em4100_print(em4100_handle_t *handle, uint8_t buf[5])
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to an em4100 info structure
+ * @param[out] *info pointer to an em4100 info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL

@@ -92,12 +92,12 @@ uint8_t em4100_basic_deinit(void)
 
 /**
  * @brief      basic example search
- * @param[out] *id points to an id buffer
- * @param[in]  timeout is the check times
+ * @param[out] *id pointer to an id buffer
+ * @param[in]  timeout check times
  * @return     status code
  *             - 0 success
  *             - 1 timeout
- * @note       none
+ * @note       -1 means always
  */
 uint8_t em4100_basic_search(uint8_t id[5], int32_t timeout)
 {
@@ -140,7 +140,7 @@ uint8_t em4100_basic_search(uint8_t id[5], int32_t timeout)
 
 /**
  * @brief     basic example print
- * @param[in] *id points to an id buffer
+ * @param[in] *id pointer to an id buffer
  * @return    status code
  *            - 0 success
  *            - 1 print failed

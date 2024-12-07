@@ -101,48 +101,48 @@ typedef struct em4100_info_s
 
 /**
  * @brief     initialize em4100_handle_t structure
- * @param[in] HANDLE points to an em4100 handle structure
- * @param[in] STRUCTURE is em4100_handle_t
+ * @param[in] HANDLE pointer to an em4100 handle structure
+ * @param[in] STRUCTURE em4100_handle_t
  * @note      none
  */
 #define DRIVER_EM4100_LINK_INIT(HANDLE, STRUCTURE)             memset(HANDLE, 0, sizeof(STRUCTURE))
 
 /**
  * @brief     link contactless_init function
- * @param[in] HANDLE points to an em4100 handle structure
- * @param[in] FUC points to a contactless_init function address
+ * @param[in] HANDLE pointer to an em4100 handle structure
+ * @param[in] FUC pointer to a contactless_init function address
  * @note      none
  */
 #define DRIVER_EM4100_LINK_CONTACTLESS_INIT(HANDLE, FUC)       (HANDLE)->contactless_init = FUC
 
 /**
  * @brief     link contactless_deinit function
- * @param[in] HANDLE points to an em4100 handle structure
- * @param[in] FUC points to a contactless_deinit function address
+ * @param[in] HANDLE pointer to an em4100 handle structure
+ * @param[in] FUC pointer to a contactless_deinit function address
  * @note      none
  */
 #define DRIVER_EM4100_LINK_CONTACTLESS_DEINIT(HANDLE, FUC)     (HANDLE)->contactless_deinit = FUC
 
 /**
  * @brief     link contactless_read function
- * @param[in] HANDLE points to an em4100 handle structure
- * @param[in] FUC points to a contactless_read function address
+ * @param[in] HANDLE pointer to an em4100 handle structure
+ * @param[in] FUC pointer to a contactless_read function address
  * @note      none
  */
 #define DRIVER_EM4100_LINK_CONTACTLESS_READ(HANDLE, FUC)       (HANDLE)->contactless_read = FUC
 
 /**
  * @brief     link delay_ms function
- * @param[in] HANDLE points to an em4100 handle structure
- * @param[in] FUC points to a delay_ms function address
+ * @param[in] HANDLE pointer to an em4100 handle structure
+ * @param[in] FUC pointer to a delay_ms function address
  * @note      none
  */
 #define DRIVER_EM4100_LINK_DELAY_MS(HANDLE, FUC)               (HANDLE)->delay_ms = FUC
 
 /**
  * @brief     link debug_print function
- * @param[in] HANDLE points to an em4100 handle structure
- * @param[in] FUC points to a debug_print function address
+ * @param[in] HANDLE pointer to an em4100 handle structure
+ * @param[in] FUC pointer to a debug_print function address
  * @note      none
  */
 #define DRIVER_EM4100_LINK_DEBUG_PRINT(HANDLE, FUC)            (HANDLE)->debug_print = FUC
@@ -160,7 +160,7 @@ typedef struct em4100_info_s
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to an em4100 info structure
+ * @param[out] *info pointer to an em4100 info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -170,7 +170,7 @@ uint8_t em4100_info(em4100_info_t *info);
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to an em4100 handle structure
+ * @param[in] *handle pointer to an em4100 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 contactless initialization failed
@@ -182,7 +182,7 @@ uint8_t em4100_init(em4100_handle_t *handle);
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to an em4100 handle structure
+ * @param[in] *handle pointer to an em4100 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 deinit failed
@@ -194,8 +194,8 @@ uint8_t em4100_deinit(em4100_handle_t *handle);
 
 /**
  * @brief      read data
- * @param[in]  *handle points to an em4100 handle structure
- * @param[out] *id points to an id buffer
+ * @param[in]  *handle pointer to an em4100 handle structure
+ * @param[out] *id pointer to an id buffer
  * @return     status code
  *             - 0 success
  *             - 1 manchester decode failed
@@ -210,8 +210,8 @@ uint8_t em4100_read(em4100_handle_t *handle, uint8_t id[5]);
 
 /**
  * @brief     print id
- * @param[in] *handle points to an em4100 handle structure
- * @param[in] *buf points to an id buffer
+ * @param[in] *handle pointer to an em4100 handle structure
+ * @param[in] *buf pointer to an id buffer
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
