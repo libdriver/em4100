@@ -54,8 +54,8 @@ extern uint8_t em4095_interface_timer_init(void);        /**< timer init functio
 
 /**
  * @brief     em4100 full function
- * @param[in] argc is arg numbers
- * @param[in] **argv is the arg address
+ * @param[in] argc arg numbers
+ * @param[in] **argv arg address
  * @return    status code
  *             - 0 success
  *             - 1 run failed
