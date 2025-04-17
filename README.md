@@ -10,7 +10,7 @@
 
 The EM4100 (previously named H4100) is a CMOS integrated circuit for use in electronic Read Only RF Transponders. The circuit is powered by an external coil placed in an electromagnetic field, and gets its master clock from the same field via one of the coil terminals. By turning on and off the modulation current, the chip will send back the 64 bits of information contained in a factor y preprogrammed memory array. The programming of the chip is performed by laser fusing of polysilicon links in order to store a unique code on each chip. The EM4100 has several metal options which are used to define the code type and data rate. Data rates of 64, 32 and 16 periods of carrier frequency per data bit are available. Data can be coded as Manchester, Biphase or PSK. Due to low power consumption of the logic core, no supply buffer capacitor is required. Only an external coil is needed to obtain the chip function. A parallel resonance capacitor of 74 pF is also integrated. 
 
-LibDriver EM4100 is the full function driver of EM4100 launched by LibDriver.It provides the function of ID reading and other functions. LibDriver is MISRA compliant.
+LibDriver EM4100 is a full-featured driver of EM4100 launched by LibDriver.It provides the function of ID reading and other functions. LibDriver is MISRA compliant.
 
 This repository includes submodule and you shold add "--recursive" to clone the whole project.
 
